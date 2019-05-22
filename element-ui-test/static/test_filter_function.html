@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试filter函数</title>
+</head>
+<body>
+    <script>
+        function isBigEnough(element) {
+            return (element >= 10);
+        }
+        let filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
+        console.log(filtered);
+    </script>
+</body>
+</html>

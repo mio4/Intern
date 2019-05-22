@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue_watch</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app">
+    <p>{{ message }}</p>
+    <input v-model="message">
+</div>
+<script>
+    new Vue({
+        el: '#app',
+        // data: {
+        //     message: 'Hello Vue!'
+        // },
+        data(){
+            return{
+                message: 'Hello Vue!'
+            }
+        },
+        watch:{
+            message(val,oldVal){
+                console.log("a: " + val,oldVal);
+            }
+        },
+        method:{
+
+        }
+    })
+</script>
+</body>
+</html>
